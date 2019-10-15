@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutMainContainer"
+            android:gravity="bottom">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUp"
+            android:text="▲"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDown"
+            android:text="▼"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnUp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLeft"
+            android:text="◀"
+            android:layout_toLeftOf="@+id/btnDown"
+            android:layout_below="@+id/btnUp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRight"
+            android:text="▶"
+            android:layout_toRightOf="@+id/btnDown"
+            android:layout_below="@+id/btnUp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutSpaceEnter"
+            android:layout_below="@+id/btnDown"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSpace"
+                android:text="SPACE"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnEnter"
+                android:text="ENTER"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
